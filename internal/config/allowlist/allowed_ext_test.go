@@ -45,6 +45,7 @@ func TestIsAllowedExt(t *testing.T) {
 		{".JL", true},
 		{".hcl", true},
 		{".HCL", true},
+		{".m", true},
 		{".tfvars", true},
 		{".TFVARS", true},
 		{".bicep", true},

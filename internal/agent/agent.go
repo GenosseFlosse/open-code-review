@@ -1108,7 +1108,7 @@ func (a *Agent) executeSubtask(ctx context.Context, d model.Diff) (bool, *subtas
 	// Build change-files list excluding current file
 	changeFilesExcludingCurrent := a.buildChangeFilesExcept(newPath)
 
-	rule := a.resolveSystemRule(strings.ToLower(newPath))
+	rule := a.resolveSystemRule(newPath)
 
 	threshold := a.args.Template.PlanModeLineThreshold
 	changeLines := d.Insertions + d.Deletions
